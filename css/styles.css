@@ -13,23 +13,35 @@ body {
   line-height: 1.5;
 }
 
-.gallery {
-  display: flex;
-  column-gap: 24px;
-  row-gap: 48px;
-  flex-wrap: wrap;
-  margin: 100px 156px;
-}
-
-.galer-itom {
-  display: block;
-}
-
-.image {}
 
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.gallery {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {}
+
+.gallery-link {
+  position: relative;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
 }
